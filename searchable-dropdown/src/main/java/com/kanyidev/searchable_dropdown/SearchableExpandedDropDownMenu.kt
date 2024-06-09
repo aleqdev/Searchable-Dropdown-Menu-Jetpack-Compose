@@ -87,7 +87,7 @@ fun <T> SearchableExpandedDropDownMenu(
     openedIcon: ImageVector = Icons.Outlined.KeyboardArrowUp,
     closedIcon: ImageVector = Icons.Outlined.KeyboardArrowDown,
     parentTextFieldCornerRadius: Dp = 12.dp,
-    colors: TextFieldColors = OutlinedTextFieldDefaults.textFieldColors(),
+    colors: TextFieldColors = OutlinedTextFieldDefaults.colors,
     onDropDownItemSelected: (T) -> Unit = {},
     dropdownItem: @Composable (T) -> Unit,
     isError: Boolean = false,
