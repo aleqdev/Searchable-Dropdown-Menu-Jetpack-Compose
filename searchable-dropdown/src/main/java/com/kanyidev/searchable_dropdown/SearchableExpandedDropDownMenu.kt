@@ -30,7 +30,7 @@ import androidx.compose.material.IconToggleButton
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Text
 import androidx.compose.material.TextFieldColors
-import androidx.compose.material.OutlinedTextFieldDefaults
+import androidx.compose.material.DefaultTextFieldColors
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.KeyboardArrowDown
 import androidx.compose.material.icons.outlined.KeyboardArrowUp
@@ -87,7 +87,7 @@ fun <T> SearchableExpandedDropDownMenu(
     openedIcon: ImageVector = Icons.Outlined.KeyboardArrowUp,
     closedIcon: ImageVector = Icons.Outlined.KeyboardArrowDown,
     parentTextFieldCornerRadius: Dp = 12.dp,
-    colors: TextFieldColors = OutlinedTextFieldDefaults.colors,
+    colors: TextFieldColors = TextFieldDefaults.textFieldColors(),
     onDropDownItemSelected: (T) -> Unit = {},
     dropdownItem: @Composable (T) -> Unit,
     isError: Boolean = false,
